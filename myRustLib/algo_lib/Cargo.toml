@@ -1,0 +1,10 @@
+[package]
+name = "algo_lib"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# On ne précise pas la version, on dit juste de regarder le workspace
+ndarray = { workspace = true }
+# Si tes algos ont besoin des types définis dans tes environnements
+env_lib = { workspace = true }

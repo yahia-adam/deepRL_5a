@@ -1,0 +1,16 @@
+pub mod alpha_zero;
+pub mod deep_q_learning;
+pub mod double_deep_q_learning;
+pub mod double_dqn_experience_replay;
+pub mod double_dqn_prioritized_replay;
+pub mod expert_apprentice;
+pub mod mcts_uct;
+pub mod muzero;
+pub mod muzero_stochastique;
+pub mod ppo_a2c_style;
+pub mod random;
+pub mod random_rollout;
+pub mod reinforce;
+pub mod reinforce_critic_baseline;
+pub mod reinforce_mean_baseline;
+pub mod tabular_q_learning;

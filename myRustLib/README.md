@@ -29,12 +29,12 @@ Ce projet est organisé en **Workspace** pour séparer les algorithmes d'apprent
 
 ## Commandes Utiles
 
-| Action | Commande |
-| --- | --- |
-| **Compiler tout** | `cargo build` |
-| **Lancer le main** | `cargo run` |
-| **Lancer un exemple** | `cargo run --example <nom>` |
-| **Tester tout le projet** | `cargo test` |
+| Action                    | Commande                    |
+|---------------------------|-----------------------------|
+| **Compiler tout**         | `cargo build`               |
+| **Lancer le main**        | `cargo run`                 |
+| **Lancer un exemple**     | `cargo run --example <nom>` |
+| **Tester tout le projet** | `cargo test`                |
 
 ---
 

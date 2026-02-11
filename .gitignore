@@ -1,2 +1,8 @@
 /target
 .idea/
+myCppLib/cmake-build-debug/
+myCppLib/cmake-build-debug-event-trace/
+myCppLib/build
+myPythonLib/.venv
+myRustLib/target
+myRustLib/.idea

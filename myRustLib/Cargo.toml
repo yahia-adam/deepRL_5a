@@ -3,11 +3,11 @@ name = "deepRL_5a"
 version = "0.1.0"
 edition = "2024"
 
-[workspace]
 # Liste tous les sous-projets (crates) de ton dossier
-# - partager le meme target, Cargo.loc
-# - compile meme commands
-# - pas de probleme de version des debs
+#  partager le meme target, Cargo.loc
+#  compile meme commands
+#  pas de probleme de version des debs
+[workspace]
 members = [
     "algo_lib",
     "env_lib",
@@ -16,11 +16,18 @@ members = [
 # Utilise l'algorithme de résolution de dépendances moderne
 resolver = "2"
 
-[workspace.dependencies]
+[dependencies]
+env_lib = { workspace = true }
+algo_lib = { workspace = true }
+rand = { workspace = true }
+rand_xoshiro = { workspace = true }
+
 # Centralisation des dépendances pour tout le projet
 # changes la version ici, elle change partout dans tes libs
+[workspace.dependencies]
+env_lib = { path = "env_lib" }
+algo_lib = { path = "algo_lib" }
 ndarray = "0.17.2"
-# On définit les chemins vers tes propres bibliothèques
-# Cela permet de faire : algo_lib.workspace = true dans les autres fichiers
-algo_lib = { path = "./algo_lib" }
-env_lib = { path = "./env_lib" }
+rand = "0.9.1"
+rand_xoshiro = "0.7.0"
+

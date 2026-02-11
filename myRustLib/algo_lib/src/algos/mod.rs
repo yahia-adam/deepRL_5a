@@ -14,3 +14,4 @@ pub mod reinforce;
 pub mod reinforce_critic_baseline;
 pub mod reinforce_mean_baseline;
 pub mod tabular_q_learning;
+pub mod q_learning;

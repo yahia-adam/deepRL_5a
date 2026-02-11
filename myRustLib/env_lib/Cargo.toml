@@ -1,26 +1,8 @@
 [package]
-name = "deepRL_5a"
+name = "env_lib"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
-[workspace]
-# Liste tous les sous-projets (crates) de ton dossier
-# - partager le meme target, Cargo.loc
-# - compile meme commands
-# - pas de probleme de version des debs
-members = [
-    "algo_lib",
-    "env_lib",
-]
-
-# Utilise l'algorithme de résolution de dépendances moderne
-resolver = "2"
-
-[workspace.dependencies]
-# Centralisation des dépendances pour tout le projet
-# changes la version ici, elle change partout dans tes libs
-ndarray = "0.17.2"
-# On définit les chemins vers tes propres bibliothèques
-# Cela permet de faire : algo_lib.workspace = true dans les autres fichiers
-algo_lib = { path = "./algo_lib" }
-env_lib = { path = "./env_lib" }
+[dependencies]
+# ndarray est utile pour représenter les grilles ou les états
+ndarray = { workspace = true }
